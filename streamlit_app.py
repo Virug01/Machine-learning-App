@@ -17,7 +17,10 @@ with st.expander("Raw_data"):
   st.write("**Y**")
   y = df.species
   y
-  
+with st.expander("Data_visulaization"):
+  st.scatter_chart(data=df, x= 'bill_lenghth_mm', y= 'body_mass_g', color = 'species' )
+
+
 
 
 
