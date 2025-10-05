@@ -8,15 +8,16 @@ st.info("This app is to build Machine learning Module")
 with st.expander("Raw_data"):
   st.write("**DATA**")
   df = pd.read_csv("Raw_data.csv")
-  df.head()
+  df
 
-  # st.write("**X**")
-  # x = df.drop('species', axis = 1)
-  # x
+  st.write("**X**")
+  x = df.drop('species', axis = 1)
+  x
   
-  # st.write("**Y**")
-  # y = df.species
-  # y
+  st.write("**Y**")
+  y = df.species
+  y
   
+
 
 
