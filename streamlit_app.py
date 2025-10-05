@@ -18,7 +18,8 @@ with st.expander("Raw_data"):
   y = df.species
   y
 with st.expander("Data_visulaization"):
-  st.scatter_chart(data=df, x= 'bill_lenght_mm', y= 'body_mass_g', color = 'species' )
+  st.scatter_chart(data=df, x= 'bill_length_mm', y= 'body_mass_g', color = 'species' )
+
 
 
 
