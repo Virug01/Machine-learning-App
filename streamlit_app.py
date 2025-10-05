@@ -8,7 +8,8 @@ st.info("This app is to build Machine learning Module")
 with st.expander("Raw_data"):
   st.write("**DATA**")
   df = pd.read_csv("Raw_data.csv")
-  df.head()
+  df
+
 
 
 
