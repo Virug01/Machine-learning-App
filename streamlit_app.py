@@ -4,6 +4,10 @@ import streamlit as st
 
 st.title("Machine Learning App")
 st.info("This app is to build Machine learning Module")
-df = pd.read_csv("Raw_data.csv")
-df.head()
+
+with st.extender("Raw_data"):
+  st.write("**DATA**")
+  df = pd.read_csv("Raw_data.csv")
+  df.head()
+
 
